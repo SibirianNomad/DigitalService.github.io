@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'a_GroticExtraBlack';
+    src: url('AGroticExtraBlack.eot');
+    src: url('AGroticExtraBlack.eot?#iefix') format('embedded-opentype'),
+        url('AGroticExtraBlack.woff2') format('woff2'),
+        url('AGroticExtraBlack.woff') format('woff'),
+        url('AGroticExtraBlack.ttf') format('truetype'),
+        url('AGroticExtraBlack.svg#AGroticExtraBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
