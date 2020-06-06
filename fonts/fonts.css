@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Geometria-Medium';
+    src: url('../fonts/Geometria-Medium.eot');
+    src: url('../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Geometria-Medium.woff2') format('woff2'),
+         url('../fonts/Geometria-Medium.woff') format('woff'),
+         url('../fonts/Geometria-Medium.ttf') format('truetype'),
+         url('../fonts/Geometria-Medium.svg#Geometria-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria-Regular';
+    src: url('../fonts/Geometria-Regular.eot');
+    src: url('../fonts/Geometria-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Geometria-Regular.woff2') format('woff2'),
+         url('../fonts/Geometria-Regular.woff') format('woff'),
+         url('../fonts/Geometria-Regular.ttf') format('truetype'),
+         url('../fonts/Geometria-Regular.svg#Geometria-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Merel-Medium';
+    src: url('../fonts/Merel-Medium.eot');
+	src: url('../fonts/Merel-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Merel-Medium.woff2') format('woff2'),
+		url('../fonts/Merel-Medium.woff') format('woff'),
+		url('../fonts/Merel-Medium.ttf') format('truetype'),
+		url('../fonts/Merel-Medium.svg#Merel-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-0451;
+}
+
+@font-face {
+    font-family:'Merel-Regular';
+    src: url('../fonts/Merel-Regular.eot');
+	src: url('../fonts/Merel-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Merel-Regular.woff2') format('woff2'),
+		url('../fonts/Merel-Regular.woff') format('woff'),
+		url('../fonts/Merel-Regular.ttf') format('truetype'),
+		url('../fonts/Merel-Regular.svg#Merel-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-0451;
+}
+
+@font-face {
+    font-family:'Merel-Bold';
+    src: url('../fonts/Merel-Bold.eot');
+	src: url('../fonts/Merel-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Merel-Bold.woff2') format('woff2'),
+		url('../fonts/Merel-Bold.woff') format('woff'),
+		url('../fonts/Merel-Bold.ttf') format('truetype'),
+		url('../fonts/Merel-Bold.svg#Merel-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-0451;
+}
