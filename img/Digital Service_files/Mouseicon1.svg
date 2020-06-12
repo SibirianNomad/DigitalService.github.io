@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <defs>
+  <symbol id="svg_2" viewBox="0 0 512 512" x="0px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+   <g>
+    <polygon fill="#F05228" points="156.79,99.215 243.42,185.846 0,185.846 0,238.459 370.44,238.459 231.201,99.215  "/>
+    <polygon fill="#F05228" points="355.21,412.785 512,256 355.21,99.215 280.801,99.215 437.591,256 280.801,412.785  "/>
+    <polygon fill="#F05228" points="156.79,412.785 231.201,412.785 370.44,273.541 0,273.541 0,326.154 243.42,326.154  "/>
+   </g>
+   <g/>
+   <g/>
+   <g/>
+   <g/>
+   <g/>
+   <g/>
+   <g/>
+   <g/>
+   <g/>
+   <g/>
+   <g/>
+   <g/>
+   <g/>
+   <g/>
+   <g/>
+  </symbol>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <use id="svg_3" transform="rotate(90 348 239.5) matrix(0.958734 0 0 0.995294 -854.909 -512.806)" x="934.684791" xlink:href="#svg_2" y="515.862948"/>
+  <g id="svg_4"/>
+ </g>
+</svg>

@@ -274,9 +274,6 @@ color: #F25500;
     .header_title_bid{
         display: block;
     }
-    
-}
-@media(max-width: 580px){
     .header_top-menu{
         display: block;
     }
@@ -287,16 +284,11 @@ color: #F25500;
     .logo_block{
         margin: 0 auto;
         text-align: center;
-        display: block;
     }
     .header_title{
         width: auto;
-        display: block;
     }
-    .header_title h1 {
-        font-size: 20px;
-    }
-    .cctv{
-        white-space:normal;
-    }
+}
+@media(max-width: 580px){
+
 }
