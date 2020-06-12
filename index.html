@@ -5,8 +5,23 @@
 	<title>Digital Service</title>
 <meta name='viewport' content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="css/style.css?v=1" type="text/css" media="screen" >
+<link rel="stylesheet" href="css/left-nav-style.css?v=2" type="text/css" media="screen" >
 </head>
 <body>
+	<input type="checkbox" id="nav-toggle" hidden="">
+	<nav class="nav">
+        <label for="nav-toggle" class="nav-toggle" onclick>
+			<img src="img/menu.svg" class="burger-menu">
+		</label>
+       
+        <ul class="nav-toggle-menu">
+			<li><a href='#' class='header_link'>Услуги</a></li>
+			<li><a href='#' class='header_link'>Тарифы</a></li>
+			<li><a href='#' class='header_link'>Лицензии</a></li>
+			<li><a href='#' class='header_link'>Контакты</a></li>
+        </ul>
+    </nav>
+	<main role="main">
 	<div class='header'>
 			<div class='b-block'>
 				<div class='header_top-menu'>
@@ -22,7 +37,7 @@
 						</ul>
 					</div>
 					<div class="header-contact">
-						<div class="header_phone_service">Телефон технической поддержки</div>
+						<div class="header_phone_service">Телефон технической <br>поддержки</div>
 						<div class="header_number">
 							<a href="tel:+7(3822) 22-96-92" class="header_number-link">+7 (3822) 22-96-92</a>
 						</div>
@@ -32,7 +47,9 @@
 					<div class="header_title_bid">
 					<div class='header_title'>
 						<h1>Скоростной Безлиминтный Интернет в Томске
-						и Томском районе.<p> Скорость до 10 Мбит/с - 660 руб/месяц.</p>
+						и Томском районе.
+						<p> Скорость до 10 Мбит/с - <span class="tarif">660 руб/месяц.</span></span></p>
+						<p class="cctv"> Монтаж видеонаблюдения.</p>
 						</h1>
 					</div>
 					<a href='#' class="drop_bid">
@@ -40,10 +57,17 @@
 					</a>
 				</div>
 						<div class='header_backgrond'></div>
+					</div>	
+					<div class="mouseicon">
+						<img class="mouseicon_first" src="img/Mouseicon1.svg">
 					</div>
-					
 			</div>
+			
 					
-		</div>		
+		</div>
+	</main>		
 </body>
 </html>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
