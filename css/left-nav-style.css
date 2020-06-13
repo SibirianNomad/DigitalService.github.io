@@ -26,11 +26,6 @@
 }
 
 
-/**
- * Кнопка переключения панели
- * тег <label>
- */
-
 .nav-toggle {
     /* абсолютно позиционируем */
     position: absolute;
@@ -60,7 +55,7 @@
 }
 
 .nav-toggle:hover {
-    color: #F25500;
+    color: white;
 }
 
 
@@ -98,11 +93,6 @@
 }
 
 
-/**
- * профиксим баг в Android <= 4.1.2
- * см: http://timpietrusky.com/advanced-checkbox-hack
- */
-
 body {
     -webkit-animation: bugfix infinite 1s;
 }
@@ -113,11 +103,6 @@ body {
     }
 }
 
-
-/**
- * позаботьтимся о средних и маленьких экранах
- * мобильных устройств
- */
 
 @media screen and (min-width: 320px) {
     html,
@@ -134,15 +119,12 @@ body {
       overflow-x: hidden;
     }
     .nav {
-      width: 100%;
       box-shadow: none
     }
 }
 
 
-/**
- * Формируем стиль заголовка (логотип) панели 
-*/
+
 
 .nav h2 {
     width: 90%;
@@ -174,7 +156,6 @@ body {
 }
 
 
-/*плавное появление заголовка (логотипа) при раскрытии панели */
 
 [id='nav-toggle']:checked ~ .nav h2 {
     opacity: 1;
@@ -185,11 +166,6 @@ body {
 }
 
 
-/**
- * формируем непосредственно само меню
- * используем неупорядоченный список для пунктов меню
- * прикрутим трансфомации и плавные переходы
- */
 
 .nav > ul {
     display: block;
@@ -220,8 +196,6 @@ body {
     transform: translateX(0);
 }
 
-
-/* определяем интервалы появления пунктов меню */
 
 .nav > ul > li:nth-child(2) {
     -webkit-transition: opacity .5s .2s, -webkit-transform .5s .2s;
@@ -254,9 +228,6 @@ body {
 }
 
 
-/**
- * оформление ссылок пунктов меню
- */
 
 .nav > ul > li > a {
     display: inline-block;
@@ -275,9 +246,7 @@ body {
 }
 
 
-/**
- * состояние ссылок меню при наведении
- */
+
 
 .nav > ul > li > a:hover,
 .nav > ul > li > a:focus {
@@ -286,9 +255,6 @@ body {
 }
 
 
-/**
- * линия подчеркивания ссылок меню
- */
 
 .nav > ul > li > a:before {
     content: '';
@@ -316,10 +282,7 @@ body {
 }
 
 
-/**
- * анимируем линию подчеркивания 
- * ссылок при наведении
- */
+
 
 .nav > ul > li > a:hover:before {
     width: 0%;
@@ -337,31 +300,13 @@ body {
     text-decoration: none;
 }
 
+@media(max-width: 360px){
+    .nav-toggle{
+        top:10px;
+    }
+    .nav{
+        min-width: auto;
+        width: 260px;
+    }
 
-/* фон затемнения на основной контент 
- * при этом элементы блокируютя
- * спорная такая фича, если оно вам надо
- * просто раскомментируйте
-*/
-
-/*
-.mask-content {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    visibility: hidden;
-    opacity: 0;
 }
-
-[id='nav-toggle']:checked ~ .mask-content {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition: opacity .5s, visibility .5s;
-    transition: opacity .5s, visibility .5s;
-}
-*/

@@ -54,7 +54,7 @@ body{
     vertical-align: middle;
 }
 .header_top-menu{
-    margin-top: 20px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -177,7 +177,7 @@ color: #F25500;
     width: 24px;
     position: absolute;
     bottom: 10px;
-    left: 50%;
+    left: calc(50% - 25px);
     cursor: pointer;
 }
 .mouseicon img{
@@ -190,6 +190,16 @@ color: #F25500;
     -webkit-transform: rotate(15deg); /* Для Safari, Chrome, iOS */
     -o-transform: rotate(15deg); /* Для Opera */
     transform: rotate(15deg); 
+}
+.header_backgrond1{
+    background-image: url(../img/backgroundMobile.png);
+    margin-left:0;
+    width: 196px;
+    height: 340px;
+    margin-top: 10px;
+    display: none;
+    background-position: center;
+    background-size: cover;
 }
 @keyframes  mouseicon_first{
     0%{ transform:translate(0,0)}
@@ -208,15 +218,8 @@ color: #F25500;
 .burger-menu{
     height: 30px;
 }
-@media(max-height: 560px){
-    .mouseicon{
-        display: none;
-    }
-    .header_box_title_backgrond{
-        position:initial;
-        margin-top: 20px;
-    }
-}
+
+
 @media(max-width: 1010px){
     .header_link{
         margin-right: 10px;
@@ -264,12 +267,11 @@ color: #F25500;
     .drop_bid {
         margin-top: 10px;
     }
-    .header_backgrond {
-        background-image: url(../img/backgroundMobile.png);
-        margin-left:0;
-        width: 233px;
-        height: 405px;
-        margin-top: 10px;
+    .header_backgrond1 {
+       display: inline-block;
+    }
+    .header_backgrond{
+        display: none;
     }
     .header_title_bid{
         display: block;
@@ -298,5 +300,34 @@ color: #F25500;
     }
     .cctv{
         white-space:normal;
+    }
+    .drop_bid{
+        padding: 5px;
+        font-size: 20px;
+    }
+    .header_backgrond1{
+        width: 166px;
+        height: 276px;
+    }
+}
+
+@media(max-height: 800px){
+    .header_backgrond1{
+        width: 100px;
+        height: 172px;
+    }
+}
+@media(max-height: 600px){
+    .header_backgrond1{
+        display: none;
+    }
+}
+@media(max-height: 560px){
+    .mouseicon{
+        display: none;
+    }
+    .header_box_title_backgrond{
+        position:initial;
+        margin-top: 20px;
     }
 }
