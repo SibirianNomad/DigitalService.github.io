@@ -154,10 +154,13 @@ padding: 20px;
     display: inline-block;
     vertical-align: top;
 }
+.header_menu-ul li a:hover{
+    text-decoration: underline;
+}
 .header_title h1{
 
 font-family: Geometria-Regular;
-text-align: initial;
+text-align: justify;
 color: #61605E;
 }
 .drop_bid{
@@ -329,7 +332,6 @@ input,textarea{
     font-size: 14px;
     color: #554E4E;
     mix-blend-mode: normal;
-    opacity: 0.4;
     width: 340px;
     margin-top: 30px;
     display: inline-block;
@@ -434,6 +436,36 @@ hr{
 .footer_text{
     font-family: Merel-Regular;
     font-size: 24px;
+}
+.popup{
+    padding: 0 30px;
+    padding-bottom:20px;
+}
+.popup .b-block_contact-left .contact_mainform .contact-title{
+    text-align: center;
+}
+.popup .b-block_contact-left .contact_mainform .contact-left_name-block{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+.popup .b-block_contact-left .contact_mainform .contact-left_number-block{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+.popup .b-block_contact-left .contact_mainform .contact-left_button{
+    display: block;
+}
+.popup .b-block_contact-left .contact_mainform .contact-left_bottom_text{
+    display: block;
+    margin-top: 10px;
+}
+.error{
+    border-color: red;
+}
+label.error {
+    display: none !important;
 }
 @media(max-width: 1030px){
    .contact-left_name-block{

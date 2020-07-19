@@ -79,7 +79,7 @@
 							<div class='contact-title'><h3 class='contact-title-text'>Обратная связь</h3></div>
 							<div class='contact-left_name-block'>
 								<div class='contact-left_text'>Ваше имя</div>
-								<input type='text' placeholder="Ива Иванович" class='contact-left_form' name='name1'>
+								<input type='text' placeholder="Ива Иванович" class='contact-left_form' name='name'>
 							</div>
 
 							<div class ='contact-left_number-block'>
@@ -128,12 +128,30 @@
 			<div class="footer_text">Разработка сайта: <a href='tel:+7-923-429-08-49'>Курченко Евгений</a></div>
 		</div>
 		<div class="popup" id='popup'>
-			<h2>Обратный звонок</h2>
+			<div class='b-block_contact-left'>
+				<form class='contact_mainform' id='popup_form'>
+					<div class='contact-title'><h3 class='contact-title-text'>Обратная связь</h3></div>
+					<div class='contact-left_name-block'>
+						<div class='contact-left_text'>Ваше имя</div>
+						<input type='text' placeholder="Ива Иванович" class='contact-left_form' name='name_popup'>
+					</div>
+
+					<div class ='contact-left_number-block'>
+						<div class='contact-left_text'>Ваш номер</div>
+						<input  type='text' name='number_popup' id='popup_phone' placeholder="8(999)-999-99-99" class='contact-left_form form_number'>
+					</div>
+						<input type='submit' class='contact-left_button'  value='Отправить'>
+						<div class='contact-left_bottom_text'>Отправляя запрос, Вы подтверждаете согласие на обработку персональных данных</div>
+					</div>
+					</form>
+			</div>
+		</div>
 		</div>
 	</main>	
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>	
 </body>
 </html>

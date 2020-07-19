@@ -30,4 +30,53 @@ $('.drop_bid').click(function(){
     })
 });
 
+$("#main_form").validate({
+    rules:{
+       name:{
+         required: true,
+       },
+       number:{
+         required: true
+       }
+    }
+ });
+ $("#popup_form").validate({
+    rules:{
+       name_popup:{
+         required: true,
+       },
+       number_popup:{
+         required: true
+       }
+    }
+ });
 
+ $('#main_form').submit(function(){
+    if($(this).find('input.error').length==0){
+        $.post('ajax/send.php',{
+            name:$('input[name=name]').val(),
+            number:$('input[name=number]').val()
+        },function(data,status){
+            if(data==1){
+            // $.fancybox.open($("#"));
+            console.log(data)
+            }
+        });
+    }
+    return false;
+});
+$('#popup_form').submit(function(){
+    if($(this).find('input.error').length==0){
+        $.post('ajax/send.php',{
+            name:$('input[name=name_popup]').val(),
+            number:$('input[name=number_popup]').val()
+        },function(data,status){
+            if(data==1){
+            // $.fancybox.open($("#"));
+            console.log(data)
+            }
+        });
+    }
+    return false;
+});
+ 
