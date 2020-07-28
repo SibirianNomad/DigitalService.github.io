@@ -78,6 +78,7 @@
     -webkit-box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
     overflow-y: auto;
     background-color: #F25500;
+    overflow:hidden;
 }
 
 

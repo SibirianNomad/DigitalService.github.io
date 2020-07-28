@@ -467,6 +467,53 @@ hr{
 label.error {
     display: none !important;
 }
+.services .b-block{
+    display: flex;
+    justify-content: space-between;
+}
+.service{
+    width: 300px;
+    text-align: center;
+    margin-left: 20px;
+}
+.service:first-child{
+    margin-left: 0;
+}
+
+.service img{
+    width: 90px;
+}
+.service_title{
+    font-family: Merel-Bold;
+    font-size: 24px;
+    color: #554E4E;
+    height: 80px;
+    line-height: 20px;
+}
+.services h2{
+    text-align: center;
+    font-family: Merel-Bold;
+    font-size: 36px;
+    color: #554E4E;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.popup-success{
+    text-align: center;
+}
+.service_line{
+    width: 100%;
+    border: solid 1px #F25500;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #F25501;
+    margin: 10px auto;
+}
+.service_text{
+    font-size: 20px;
+    font-family: Merel-Regular;
+    text-align: left;
+}
 @media(max-width: 1030px){
    .contact-left_name-block{
        display: block;
@@ -549,6 +596,7 @@ label.error {
         width: 100px;
         height: 172px;
     }
+    
 }
 @media(max-height: 600px){
     .header_backgrond1{
@@ -582,6 +630,28 @@ label.error {
     }
     .licenses img {
         width: 250px;
+    }
+    .service_text{
+        font-size:18px;
+        text-align:justify;
+       
+    }
+    .services .b-block {
+        display: block;
+    }
+    .service{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .service:first-child{
+        margin: 20px auto;
+       
+    }
+    .service_title{
+       height: auto;
+    }
+    .service_line{
+        margin: 20px auto;
     }
 }
 @media(max-width: 580px){
@@ -624,6 +694,15 @@ label.error {
     .footer_text{
         font-size: 20px;
     }
+    .popup-success .contact-title-text{
+        font-size: 18px;
+
+    }
+    .popup-success{
+        width: 270px;
+        overflow:hidden;
+    }
+
 }
 @media(max-width: 530px){
     .licenses{
@@ -637,8 +716,25 @@ label.error {
         margin-bottom: 10px;
     }
 }
+@media(max-width:440px){
+    .popup{
+        width: 300px;
+        overflow:hidden;
+    }
+    .contact-left_bottom_text{
+        width: auto;
+    }
+}
 @media(max-width: 380px){
     .footer_text{
         font-size: 16px;
+    }
+}
+@media(max-width: 370px){
+    .service{
+        width: auto;
+    }
+    .contact-right_button{
+        font-size: 14px;
     }
 }

@@ -17,7 +17,7 @@ function PopUpShow(){
     
 }
 function PopUpHide(){
-
+    $("#popup-success").hide();
     $("#popup").hide();
 }
 
@@ -58,7 +58,12 @@ $("#main_form").validate({
             number:$('input[name=number]').val()
         },function(data,status){
             if(data==1){
-            // $.fancybox.open($("#"));
+            $.fancybox.open({
+                src : '#popup-success',
+                opts : {
+                    touch : false,
+                            }
+            });
             console.log(data)
             }
         });
@@ -72,7 +77,12 @@ $('#popup_form').submit(function(){
             number:$('input[name=number_popup]').val()
         },function(data,status){
             if(data==1){
-            // $.fancybox.open($("#"));
+            $.fancybox.open({
+                src : '#popup-success',
+                opts : {
+                    touch : false,
+                            }
+            });
             console.log(data)
             }
         });
