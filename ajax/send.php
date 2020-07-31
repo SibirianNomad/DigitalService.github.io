@@ -40,7 +40,7 @@ if(!empty($name) && !empty($number)){
     $mail -> SMTPSecure = 'ssl';
     $mail -> Port       = 465;
     $mail -> setFrom('sibiriannomad@gmail.com', 'Заявка от клиента'); 
-    $mail -> addAddress('ekurchenko@yahoo.com'); 
+    $mail -> addAddress('office@dgs.ru'); 
     
     $mail -> isHTML(true);
     $mail -> Subject = 'Заявка от '.$name;
