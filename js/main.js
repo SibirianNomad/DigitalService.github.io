@@ -55,7 +55,9 @@ $("#main_form").validate({
     if($(this).find('input.error').length==0){
         $.post('ajax/send.php',{
             name:$('input[name=name]').val(),
-            number:$('input[name=number]').val()
+            number:$('input[name=number]').val(),
+            theme:$('input[name=theme]').val(),
+            maintext:$('textarea[name=maintext]').val()
         },function(data,status){
             if(data==1){
             $.fancybox.open({
