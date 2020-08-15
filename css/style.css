@@ -147,7 +147,7 @@ display: inline-block;
 width: 450px;
 border: 2px solid #F25500;
 
-border-radius: 25px;
+border-radius: 10px;
 box-shadow: 0 0 10px rgba(0,0,0,0.5);
 padding: 20px;
 }
@@ -308,7 +308,7 @@ color: #F25500;
 
 .contact-left_form {
     display: inline-block;
-    border-radius: 3px;
+    border-radius: 10px;
     border: 1px solid #E6E6E6;
     box-sizing: border-box;
     padding-left: 24px;
@@ -344,7 +344,7 @@ input,textarea{
     display: inline-block;
     background: #F25500;
     box-sizing: border-box;
-    border-radius: 3px;
+    border-radius: 10px;
     text-align: center;
     padding: 15px 30px;
     margin-top: 23px;
@@ -383,7 +383,7 @@ input,textarea{
     color: #FFFF;
     background: #F25500;
     box-sizing: border-box;
-    border-radius: 3px;
+    border-radius: 10px;
     display: inline-block;
     padding: 15px 50px;
     margin-top: 20px;
@@ -523,6 +523,7 @@ label.error {
     display: block;
     width: 100%;
     margin-left: 0;
+	margin-bottom:20px;
    }
 
 }
@@ -711,10 +712,13 @@ label.error {
     .licenses img{
         display: block;
         margin: 0 auto;
+		margin-bottom:20px;
     }
-    .licenses img:first-child{
-        margin-bottom: 10px;
-    }
+	.licenses:last-child{
+		margin-bottom:0;
+	}
+    
+	
 }
 @media(max-width:440px){
     .popup{

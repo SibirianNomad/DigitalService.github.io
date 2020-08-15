@@ -244,6 +244,7 @@ body {
     -webkit-transition: color .5s ease, padding .5s ease;
     -moz-transition: color .5s ease, padding .5s ease;
     transition: color .5s ease, padding .5s ease;
+	padding-left:15px;
 }
 
 

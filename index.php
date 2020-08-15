@@ -126,7 +126,7 @@
 					<div class='b-block_contact-right'>
 						<div class='contact-title'><h3 class='contact-title-text'>Наш офис</h3></div>
 						<div class='contact_text'>
-							<p><span class='contact_text-firstword'>Адрес: </span> г.Томск, пер. Паровозный д.10</p>
+							<p><span class='contact_text-firstword'>Адрес: </span> г.Томск, <nobr>пер. Паровозный д.10</nobr></p>
 							<p><span class='contact_text-firstword'>E-mail: </span> <a href='mail:support@dgs.ruu' class='contact_number-link'>support@dgs.ru</a></p>
 							<p><span class='contact_text-firstword'>Телефон: </span><a href='tel:+7 (3822) 99-9-23' class='contact_number-link'>+7 3822 90 13 32</a></p>
 							<p><span class='contact_text-firstword'>Факс: </span><a href='tel:+7 (3822) 99-99-24' class='contact_number-link'>+7 3822 90 13 32</a></p>
@@ -148,7 +148,7 @@
 		</div>	
 		<hr>
 		<div class="b-block footer">
-			<div class="footer_text">© Copyright Digital Service 2007</div>
+			<div class="footer_text">© Copyright Digital Service 2007 - <?=date('Y')?></div>
 			<div class="footer_text">Разработка сайта: <a href='tel:+7-923-429-08-49'>Курченко Евгений</a></div>
 		</div>
 		<div class="popup" id='popup'>
