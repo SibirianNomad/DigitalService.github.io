@@ -59,14 +59,13 @@ $("#main_form").validate({
             theme:$('input[name=theme]').val(),
             maintext:$('textarea[name=maintext]').val()
         },function(data,status){
-            if(data==1){
+            if(status=='success'){
             $.fancybox.open({
                 src : '#popup-success',
                 opts : {
                     touch : false,
                             }
             });
-            console.log(data)
             }
         });
     }
@@ -78,14 +77,14 @@ $('#popup_form').submit(function(){
             name:$('input[name=name_popup]').val(),
             number:$('input[name=number_popup]').val()
         },function(data,status){
-            if(data==1){
+            if(status=='success'){
             $.fancybox.open({
                 src : '#popup-success',
                 opts : {
                     touch : false,
                             }
             });
-            console.log(data)
+        
             }
         });
     }

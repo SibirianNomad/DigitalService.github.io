@@ -26,31 +26,32 @@ if(isset($_POST['number_popup'])){
     $number=trim($_POST['number_popup']);
 }
 if(!empty($name) && !empty($number)){
-
+    try{
     $mail = new PHPMailer();
+    $mail->isSMTP();
+    $mail->SMTPDebug = 2;
+    $mail->Debugoutput = 'html';
+    $mail->Port = 587;
+    $mail->SMTPSecure = 'tls';
+    $mail->SMTPAuth = true;
+    $mail->isHTML(true);
+    $mail->CharSet ="utf-8";
 
-    $mail -> isSMTP();   
-    $mail -> CharSet = "UTF-8";
-    $mail -> SMTPAuth   = true;
-    $mail -> Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
+    $mail->Host       = 'smtp.gmail.com'; 
+    $mail->Username   = 'sibiriannomad';
+    $mail->Password = 'Faraon25';
 
-    $mail -> Host       = 'smtp.gmail.com'; 
-    $mail -> Username   = 'sibiriannomad@gmail.com';
-    $mail -> Password   = 'Faraon25'; 
-    $mail -> SMTPSecure = 'ssl';
-    $mail -> Port       = 465;
-    $mail -> setFrom('sibiriannomad@gmail.com', 'Заявка от клиента'); 
-    $mail -> addAddress('office@dgs.ru'); 
+    $mail->setFrom('sibiriannomad@gmail.com', 'Заявка от клиента'); 
+    $mail->addAddress('office@dgs.ru','Meneger DGS'); 
     
-    $mail -> isHTML(true);
-    $mail -> Subject = 'Заявка от '.$name;
-    $mail -> Body = '<p><b>Имя: </b>'.$name.'</p><p><b>Телефон: </b>'.$number.'</p>
+    
+    $mail->Subject = 'Заявка от '.$name;
+    $mail->Body = '<p><b>Имя: </b>'.$name.'</p><p><b>Телефон: </b>'.$number.'</p>
     <p><b>Тема сообщения: </b>'.$theme.'</p><p><p><b>Сообщение: </b>'.$maintext.'</p><p>';
-    if(!$mail->send()) {
-        echo 'Message could not be sent.';
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
-       } else {
-        echo 1;
-       }  
+    $mail->send();
+    echo 1;
+}catch(Exception $e) {
+    echo "Ошибка отправки:".$mail->ErrorInfo;
    
+}
 }
