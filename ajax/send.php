@@ -26,18 +26,24 @@ if(isset($_POST['number_popup'])){
     $number=trim($_POST['number_popup']);
 }
 if(!empty($name) && !empty($number)){
+    $charset = 'utf-8';
     $headers =  'MIME-Version: 1.0' . "\r\n";
     $headers .= 'From: Your name <info@address.com>' . "\r\n";
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     $subject = 'Заявка от '.$name;
     $body = '<p><b>Имя: </b>'.$name.'</p><p><b>Телефон: </b>'.$number.'</p>
     <p><b>Тема сообщения: </b>'.$theme.'</p><p><p><b>Сообщение: </b>'.$maintext.'</p><p>';
-    $mail = mail('office@dgs.ru', $subject, $body, $headers);
-    if(!$mail) {
-        echo 'Message could not be sent.';
-    } else {
-        echo 1;
-    }
+    $fromName='';
+    $from='';
+    $to='office@dgs.ru';
+
+    $headers = "MIME-Version: 1.0\n";
+    $headers .= "From: =?$charset?B?".base64_encode($fromName)."?= <$from>\n";
+    $headers .= "Content-type: text/html; charset=$charset\n";
+    $headers .= "Content-Transfer-Encoding: base64\n";
+
+    return  mail("=?$charset?B?".base64_encode($to)."?= <$to>", "=?$charset?B?".base64_encode($subject)."?=", chunk_split(base64_encode($body)), $headers, "-f$from");
+
 //проверяем отправку
 //    $mail = new PHPMailer();
 //

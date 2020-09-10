@@ -59,14 +59,15 @@ $("#main_form").validate({
             theme:$('input[name=theme]').val(),
             maintext:$('textarea[name=maintext]').val()
         },function(data,status){
-            if(data==1){
+            console.log(data,status)
+            if(data==true){
             $.fancybox.open({
                 src : '#popup-success',
                 opts : {
                     touch : false,
                             }
             });
-            console.log(data)
+
             }
         });
     }
