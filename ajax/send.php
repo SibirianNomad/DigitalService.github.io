@@ -39,7 +39,7 @@ if(!empty($name) && !empty($number)){
 
     $mail->Host       = 'smtp.gmail.com'; 
     $mail->Username   = 'sibiriannomad';
-    $mail->Password = 'Faraon25';
+    $mail->Password = 'Faraon2506';
 
     $mail->setFrom('sibiriannomad@gmail.com', 'Заявка от клиента'); 
     $mail->addAddress('office@dgs.ru','Meneger DGS'); 
