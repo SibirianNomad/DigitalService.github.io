@@ -47,7 +47,7 @@
 					<div class='header_title'>
 						<h1>Скоростной Безлиминтный Интернет в Томске
 						и Томском районе.
-						<p> Скорость до 10 Мбит/с - <span class="tarif">660 руб/месяц.</span></span></p>
+						<p> Скорость до 10 Мбит/с - <span class="tarif">300 руб/месяц.</span></span></p>
 						<p class="cctv"> Монтаж видеонаблюдения.</p>
 						</h1>
 					</div>
@@ -128,8 +128,9 @@
 						<div class='contact_text'>
 							<p><span class='contact_text-firstword'>Адрес: </span> г.Томск, <nobr>пер. Паровозный д.10</nobr></p>
 							<p><span class='contact_text-firstword'>E-mail: </span> <a href='mail:support@dgs.ruu' class='contact_number-link'>support@dgs.ru</a></p>
-							<p><span class='contact_text-firstword'>Телефон: </span><a href='tel:+7 (3822) 99-9-23' class='contact_number-link'>+7 3822 90 13 32</a></p>
-							<p><span class='contact_text-firstword'>Факс: </span><a href='tel:+7 (3822) 99-99-24' class='contact_number-link'>+7 3822 90 13 32</a></p>
+							<p><span class='contact_text-firstword'>Телефон: </span><a href='tel:+7 (3822) 99-99-23' class='contact_number-link'>+7 3822 99 99 23</a></p>
+							<p><span class='contact_text-firstword'>Телефон: </span><a href='tel:+7 (3822) 99-99-23' class='contact_number-link'>+7 3822 99 99 23</a></p>
+							<p><span class='contact_text-firstword'>Факс: </span><a href='tel:+7 (3822) 99-99-24' class='contact_number-link'>+7 3822 99 99 24</a></p>
 						</div>
 						<a href='inf.txt' download="inf.txt" class='contact-right_button'>Скачать реквизиты   ↓</a>
 						<div class='contact-title'><h3 class='contact-title-text'>Хотите у нас работать?</h3></div>

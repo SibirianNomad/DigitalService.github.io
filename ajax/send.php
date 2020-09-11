@@ -42,7 +42,7 @@ if(!empty($name) && !empty($number)){
     $mail->Password = 'Faraon2506';
 
     $mail->setFrom('sibiriannomad@gmail.com', 'Заявка от клиента'); 
-    $mail->addAddress('office@dgs.ru','Meneger DGS'); 
+    $mail->addAddress('office@dgs.ru','Meneger DGS');
     
     
     $mail->Subject = 'Заявка от '.$name;
