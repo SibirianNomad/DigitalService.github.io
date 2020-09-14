@@ -129,7 +129,6 @@
 							<p><span class='contact_text-firstword'>Адрес: </span> г.Томск, <nobr>пер. Паровозный д.10</nobr></p>
 							<p><span class='contact_text-firstword'>E-mail: </span> <a href='mail:support@dgs.ruu' class='contact_number-link'>support@dgs.ru</a></p>
 							<p><span class='contact_text-firstword'>Телефон: </span><a href='tel:+7 (3822) 99-99-23' class='contact_number-link'>+7 3822 99 99 23</a></p>
-							<p><span class='contact_text-firstword'>Телефон: </span><a href='tel:+7 (3822) 99-99-23' class='contact_number-link'>+7 3822 99 99 23</a></p>
 							<p><span class='contact_text-firstword'>Факс: </span><a href='tel:+7 (3822) 99-99-24' class='contact_number-link'>+7 3822 99 99 24</a></p>
 						</div>
 						<a href='inf.txt' download="inf.txt" class='contact-right_button'>Скачать реквизиты   ↓</a>
