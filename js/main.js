@@ -1,6 +1,7 @@
 $(document).ready(function(){   
     PopUpHide();
 });
+
 $('.nav-toggle').on('click',function(){
     if($('.burger-menu').hasClass('display-none')){
         $('.burger-menu').removeClass('display-none');
@@ -53,6 +54,7 @@ $("#main_form").validate({
 
  $('#main_form').submit(function(){
     if($(this).find('input.error').length==0){
+        $('.contact-left_button').attr('disabled',true);
         $.post('ajax/send.php',{
             name:$('input[name=name]').val(),
             number:$('input[name=number]').val(),
@@ -60,6 +62,7 @@ $("#main_form").validate({
             maintext:$('textarea[name=maintext]').val()
         },function(data,status){
             if(status=='success'){
+                $('.contact-left_button').attr('disabled',false);
             $.fancybox.open({
                 src : '#popup-success',
                 opts : {
@@ -73,11 +76,13 @@ $("#main_form").validate({
 });
 $('#popup_form').submit(function(){
     if($(this).find('input.error').length==0){
+        $('.contact-left_button').attr('disabled',true);
         $.post('ajax/send.php',{
             name:$('input[name=name_popup]').val(),
             number:$('input[name=number_popup]').val()
         },function(data,status){
             if(status=='success'){
+                $('.contact-left_button').attr('disabled',false);
             $.fancybox.open({
                 src : '#popup-success',
                 opts : {
