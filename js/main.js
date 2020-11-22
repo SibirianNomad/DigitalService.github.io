@@ -20,6 +20,8 @@ function PopUpShow(){
 function PopUpHide(){
     $("#popup-success").hide();
     $("#popup").hide();
+    $("#popup-img1").hide();
+    $("#popup-img2").hide();
 }
 
 $('.drop_bid').click(function(){
@@ -94,5 +96,24 @@ $('#popup_form').submit(function(){
         });
     }
     return false;
+});
+$('.license').on('click',function(){
+    console.log()
+    if($(this)[0].id==1){
+   $.fancybox.open({
+        src : '#popup-img1',
+        opts : {
+            touch : false,
+                    }
+    });
+    }else{
+        $.fancybox.open({
+            src : '#popup-img2',
+            opts : {
+                touch : false,
+                        }
+        });
+    }
+
 });
  
