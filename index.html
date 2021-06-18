@@ -3,7 +3,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Digital Service</title>
-    <meta name='viewport' content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name='viewport'
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="img/small_logo.png" type="image/png">
     <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css?v=1" type="text/css" media="screen">
     <link rel="stylesheet" href="css/style.css?v=1" type="text/css" media="screen">
@@ -47,7 +48,7 @@
                 <div class="header_title_bid">
                     <div class='header_title'>
                         <h1>Скоростной безлимитный в частный дом, дачу.
-                            <p> <span class="nowrap">Доступ в сеть в любом месте!</span></p>
+                            <p><span class="nowrap">Доступ в сеть в любом месте!</span></p>
                             <p><span class="nowrap">От 300 руб/месяц.</span></p>
                         </h1>
                     </div>
@@ -98,7 +99,8 @@
                 <div class="service_title">Web-виджет</div>
                 <div class="service_line"></div>
                 <div class="service_text">
-                    Web-виджеты привлекают внимание посетителей и удерживают их на сайте. Чем дольше посетитель находится на сайте, тем вероятнее, что он совершит покупку.
+                    Web-виджеты привлекают внимание посетителей и удерживают их на сайте. Чем дольше посетитель
+                    находится на сайте, тем вероятнее, что он совершит покупку.
                 </div>
             </div>
         </div>
@@ -200,8 +202,25 @@
                 <div class='contact-left_bottom_text'>Отправляя запрос, Вы подтверждаете согласие на обработку
                     персональных данных
                 </div>
+            </form>
         </div>
-        </form>
+    </div>
+    <div class="popup_widget" id='popup_widget'>
+        <div class='b-block_contact-left'>
+            <form class='contact_mainform' id='popup_form_widget'>
+                <div class='contact-title'><h3 class='contact-title-text'>Обратная связь</h3></div>
+                <div class='contact-left_number-block'>
+                    <div class='contact-left_text'>Ваш номер</div>
+                    <input type='text' name='number_popup' id='popup_phone_widget' placeholder="8(999)-999-99-99"
+                           class='contact-left_form form_number'>
+                    <input type="hidden" id="i" value="1">
+                </div>
+                <input type='submit' class='contact-left_button' value='Отправить'>
+                <div class='contact-left_bottom_text'>Отправляя запрос, Вы подтверждаете согласие на обработку
+                    персональных данных
+                </div>
+            </form>
+        </div>
     </div>
     <div class="popup-success" id='popup-success'>
         <img src='img/success.svg'>
@@ -216,12 +235,19 @@
     </div>
     </div>
     </div>
+    <div type="button" class="callback-bt">
+        <div class="text-call">
+            <i class="fa fa-phone"></i>
+            <span>Заказать<br>звонок</span>
+        </div>
+    </div>
 </main>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.fancybox-1.3.4.js"></script>
 <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
 
