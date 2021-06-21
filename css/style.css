@@ -304,7 +304,7 @@ a {
 }
 
 .map {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
@@ -575,7 +575,7 @@ label.error {
 
 .service_title {
     font-family: Merel-Bold;
-    font-size: 24px;
+    font-size: 20px;
     color: #554E4E;
     line-height: 20px;
 }
@@ -628,6 +628,9 @@ label.error {
 .widget iframe{
     height: 70px;
     margin-top: 5px;
+}
+.contact-title h4{
+    width: 500px;
 }
 /*кнопка звонка*/
 
@@ -925,7 +928,7 @@ label.error {
     }
 
     .mouseicon {
-        bottom: 0;
+        bottom: -40px;
     }
 
     .drop_bid {
@@ -1113,7 +1116,9 @@ label.error {
         width: 300px;
         overflow: hidden;
     }
-
+    .mouseicon {
+        bottom: -80px;
+    }
     .contact-left_bottom_text {
         width: auto;
     }
@@ -1122,7 +1127,11 @@ label.error {
         width: 300px;
     }
 }
-
+@media (max-width: 380px) {
+    .mouseicon {
+        bottom: -105px;
+    }
+}
 @media (max-width: 380px) {
     .footer_text {
         font-size: 16px;
