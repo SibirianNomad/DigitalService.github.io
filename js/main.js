@@ -138,22 +138,4 @@ $('.license').on('click', function () {
     }
 
 });
-$(document).ready(function() {
-    $('#popup_form_widget').on('click',function () {
-        if ($(this).find('input.error').length == 0) {
-            $('.contact-left_button').attr('disabled', true);
-            var number = $('#popup_phone_widget').val();
-            var i = $('#i').val();
-            number = Number.parseInt(number.replace(/[^\d]/g, ''));
-            $.ajax({
-                url: "https://213.183.125.35/wcb.php",
-                type: 'post',
-                data: {p: number, i: i},
-                cache: false
-            }, function (data, status) {
-                console.log(data, status)
-            })
-        }
 
-    });
-});

@@ -630,7 +630,7 @@ label.error {
     margin-top: 5px;
 }
 .contact-title h4{
-    width: 500px;
+    width: 440px;
 }
 /*кнопка звонка*/
 
@@ -707,7 +707,12 @@ label.error {
     -webkit-animation: 1200ms ease 0s normal none 1 running shake;
     -webkit-animation-iteration-count: infinite;
 }
-
+iframe {
+    height: 70px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
 @-webkit-keyframes hoverWave {
     0% {
         box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 0 rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
@@ -928,7 +933,7 @@ label.error {
     }
 
     .mouseicon {
-        bottom: -40px;
+        bottom: -108px;
     }
 
     .drop_bid {
@@ -1049,7 +1054,7 @@ label.error {
     }
 
     .header_title h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .cctv {
@@ -1071,9 +1076,12 @@ label.error {
     }
 
     .contact-title {
-        font-size: 30px;
+        font-size: 24px;
+        line-height: 30px;
     }
-
+    .contact-title h4{
+        width: auto;
+    }
     .footer_text {
         font-size: 20px;
     }
@@ -1094,6 +1102,10 @@ label.error {
 }
 
 @media (max-width: 530px) {
+    .popup,.popup_widget {
+        width: 300px;
+        overflow: hidden;
+    }
     .licenses .b-block {
         display: block;
     }
@@ -1110,15 +1122,15 @@ label.error {
 
 
 }
-
 @media (max-width: 440px) {
-    .popup,.popup_widget {
-        width: 300px;
-        overflow: hidden;
-    }
     .mouseicon {
-        bottom: -80px;
+        bottom: -213px;
     }
+    .nowrap{
+        white-space: normal;
+    }
+}
+@media (max-width: 440px) {
     .contact-left_bottom_text {
         width: auto;
     }
@@ -1129,10 +1141,8 @@ label.error {
 }
 @media (max-width: 380px) {
     .mouseicon {
-        bottom: -105px;
+        bottom: -300px;
     }
-}
-@media (max-width: 380px) {
     .footer_text {
         font-size: 16px;
     }
