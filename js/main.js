@@ -1,5 +1,7 @@
 $(document).ready(function () {
     PopUpHide();
+    $('.popup_widget').hide()
+
 });
 
 $('.nav-toggle').on('click', function () {
