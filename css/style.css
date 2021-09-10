@@ -708,8 +708,8 @@ label.error {
     -webkit-animation-iteration-count: infinite;
 }
 iframe {
-    height: 70px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
     margin: 0 auto;
     display: block;
 }
