@@ -635,7 +635,7 @@ label.error {
 /*кнопка звонка*/
 
 .callback-bt {
-    background:#F25500;
+    /*background:#F25500;*/
     border:2px solid #F25500;
     border-radius:50%;
     box-shadow:0 8px 10px rgba(56,163,253,0.3);
@@ -663,8 +663,8 @@ label.error {
 .callback-bt .text-call span {
     text-align: center;
     color:#38a3fd;
-    opacity: 0;
-    font-size: 0;
+    opacity: 1;
+    font-size: 11px;
     position:absolute;
     right: 4px;
     top: 22px;
@@ -675,10 +675,10 @@ label.error {
     font-family: 'montserrat', Arial, Helvetica, sans-serif;
 }
 
-.callback-bt .text-call:hover span {
-    opacity: 1;
-    font-size: 11px;
-}
+/*.callback-bt .text-call:hover span {*/
+/*    opacity: 1;*/
+/*    font-size: 11px;*/
+/*}*/
 .callback-bt:hover i {
     display:none;
 }
