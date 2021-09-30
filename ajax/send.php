@@ -39,7 +39,7 @@ if(!empty($name) && !empty($number)){
         $mail->SMTPSecure = 'tls';
         $mail->Port = '587';
         $mail->CharSet = 'UTF-8';
-        $mail->addAddress('ekurchenko@yahoo.com');
+        $mail->addAddress('office@dgs.ru');
         $mail->isHTML(true);
         $mail->Subject = 'Заявка от '.$name;
         $mail->Body = 'Hello!';
