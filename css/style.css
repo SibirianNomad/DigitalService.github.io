@@ -714,14 +714,15 @@ iframe {
 }
 .warning {
     font-family: Geometria-Medium;
-    border: 4px solid #196dff;
+    border: 4px solid #ff1919;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 10px;
-    font-size: 18px;
+    font-size: 25px;
     color: #61605E;
-    margin-top: 15px;
+    margin-top: 30px;
     color: #61605E;
+    text-align: center;
 }
 .warning_title {
     text-align: center;
